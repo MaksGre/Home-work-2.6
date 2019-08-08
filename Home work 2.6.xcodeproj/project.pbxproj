@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B50C240622FC2F9000610021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C240522FC2F9000610021 /* AppDelegate.swift */; };
-		B50C240822FC2F9000610021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C240722FC2F9000610021 /* ViewController.swift */; };
+		B50C240822FC2F9000610021 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C240722FC2F9000610021 /* MainViewController.swift */; };
 		B50C240B22FC2F9000610021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50C240922FC2F9000610021 /* Main.storyboard */; };
 		B50C240D22FC2F9100610021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50C240C22FC2F9100610021 /* Assets.xcassets */; };
 		B50C241022FC2F9100610021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50C240E22FC2F9100610021 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		B50C240222FC2F9000610021 /* Home work 2.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home work 2.6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50C240522FC2F9000610021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B50C240722FC2F9000610021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B50C240722FC2F9000610021 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B50C240A22FC2F9000610021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B50C240C22FC2F9100610021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B50C240F22FC2F9100610021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				B50C240522FC2F9000610021 /* AppDelegate.swift */,
-				B50C240722FC2F9000610021 /* ViewController.swift */,
+				B50C240722FC2F9000610021 /* MainViewController.swift */,
 				B50C240922FC2F9000610021 /* Main.storyboard */,
 				B50C240C22FC2F9100610021 /* Assets.xcassets */,
 				B50C240E22FC2F9100610021 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B50C240822FC2F9000610021 /* ViewController.swift in Sources */,
+				B50C240822FC2F9000610021 /* MainViewController.swift in Sources */,
 				B50C240622FC2F9000610021 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Grebenozhko-Maksim.Home-work-2-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Grebenozhko-Maksim.Home-work-2-6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
