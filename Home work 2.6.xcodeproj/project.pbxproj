@@ -12,6 +12,7 @@
 		B50C240B22FC2F9000610021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50C240922FC2F9000610021 /* Main.storyboard */; };
 		B50C240D22FC2F9100610021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B50C240C22FC2F9100610021 /* Assets.xcassets */; };
 		B50C241022FC2F9100610021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B50C240E22FC2F9100610021 /* LaunchScreen.storyboard */; };
+		B50C241822FD755D00610021 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50C241722FD755D00610021 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B50C240C22FC2F9100610021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B50C240F22FC2F9100610021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B50C241122FC2F9100610021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B50C241722FD755D00610021 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B50C240522FC2F9000610021 /* AppDelegate.swift */,
 				B50C240722FC2F9000610021 /* MainViewController.swift */,
 				B50C240922FC2F9000610021 /* Main.storyboard */,
+				B50C241722FD755D00610021 /* DetailViewController.swift */,
 				B50C240C22FC2F9100610021 /* Assets.xcassets */,
 				B50C240E22FC2F9100610021 /* LaunchScreen.storyboard */,
 				B50C241122FC2F9100610021 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50C241822FD755D00610021 /* DetailViewController.swift in Sources */,
 				B50C240822FC2F9000610021 /* MainViewController.swift in Sources */,
 				B50C240622FC2F9000610021 /* AppDelegate.swift in Sources */,
 			);
