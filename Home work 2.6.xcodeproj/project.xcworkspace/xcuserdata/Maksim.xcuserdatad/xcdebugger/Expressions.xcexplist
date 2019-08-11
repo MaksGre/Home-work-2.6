@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ExtandedViewController.tableView(_:cellForRowAt:):ExtandedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mainVC.persons.count">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "mainVC.persons[indexPath.row].name">
+            </PersistentString>
+            <PersistentString
+               value = "mainVC">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewController.createPersons():MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "persons">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
