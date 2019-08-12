@@ -3,8 +3,30 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MainViewController.createPersons():MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "persons">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ExtandedViewController.viewWillAppear(_:):ExtandedViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "persons">
+            </PersistentString>
+            <PersistentString
+               value = "PersonsGenerator.shared.persons">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ExtandedViewController.tableView(_:cellForRowAt:):ExtandedViewController.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "mainVC">
+            </PersistentString>
             <PersistentString
                value = "mainVC.persons.count">
             </PersistentString>
@@ -13,17 +35,6 @@
             </PersistentString>
             <PersistentString
                value = "mainVC.persons[indexPath.row].name">
-            </PersistentString>
-            <PersistentString
-               value = "mainVC">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MainViewController.createPersons():MainViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "persons">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -9,8 +9,6 @@
 import UIKit
 
 class MainViewController: UITableViewController {
-    
-    var persons = PersonsGenerator.shared.persons
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,20 +22,21 @@ class MainViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        
+        let persons = PersonsGenerator.shared.persons
+
         cell.textLabel?.text = "\(persons[indexPath.row].name) \(persons[indexPath.row].surname)"
         cell.imageView?.image = UIImage(named: persons[indexPath.row].photo)
 
         //не работает
-        cell.imageView?.contentMode = .scaleToFill
+        cell.imageView?.contentMode = .scaleAspectFill
         cell.imageView?.frame.size = CGSize(width: 120, height: 76)
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let currentPerson = persons.remove(at: sourceIndexPath.row)
-        persons.insert(currentPerson, at: destinationIndexPath.row)
+        let currentPerson = PersonsGenerator.shared.persons.remove(at: sourceIndexPath.row)
+        PersonsGenerator.shared.persons.insert(currentPerson, at: destinationIndexPath.row)
         tableView.reloadData()
     }
     
@@ -48,7 +47,7 @@ class MainViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
             let detailVC = segue.destination as! DetailViewController
-            detailVC.person = persons[indexPath.row]
+            detailVC.person = PersonsGenerator.shared.persons[indexPath.row]
         }
     }
 }

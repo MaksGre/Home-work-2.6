@@ -10,10 +10,9 @@ import UIKit
 
 class ExtandedViewController: UITableViewController {
     
-    var persons = PersonsGenerator.shared.persons
-    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
+        let persons = PersonsGenerator.shared.persons
         label.text = " \(persons[section].name) \(persons[section].surname)"
         label.backgroundColor = .cyan
         return label
@@ -30,10 +29,16 @@ class ExtandedViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PersonTableViewCell
         
-        let person = persons[indexPath.section]
+        let person = PersonsGenerator.shared.persons[indexPath.section]
         cell.configure(person: person)
         
         return cell
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super .viewWillAppear(true)
+        tableView.reloadData()
+        print("123")
     }
 
 }
