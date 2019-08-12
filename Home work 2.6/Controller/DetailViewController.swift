@@ -33,4 +33,5 @@ class DetailViewController: UIViewController {
             photoView.image = UIImage(named: person.photo)
         }
     }
+    
 }

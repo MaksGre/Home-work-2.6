@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UITableViewController {
+final class MainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,5 +50,6 @@ class MainViewController: UITableViewController {
             detailVC.person = PersonsGenerator.shared.persons[indexPath.row]
         }
     }
+    
 }
 

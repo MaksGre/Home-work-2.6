@@ -8,9 +8,9 @@
 
 import Foundation
 
-class PersonsGenerator {
+final class PersonsGenerator {
     
-    static let shared = PersonsGenerator()
+    // MARK: - Private Properties
     
     private var names = ["Авдей", "Богдан", "Вольдемар", "Галактион", "Добрыня",
                         "Емельян", "Игнатий", "Кузьма", "Лукьян", "Мирослав"]
@@ -27,6 +27,10 @@ class PersonsGenerator {
                          "leonardo-di-kaprio", "nikolas-kejdzh", "robert-de-niro", "tom-henks", "tom-kruz"]
     
     private let countOfPersons = 10
+    
+    // MARK: - Public Properties
+    
+    static let shared = PersonsGenerator()
     
     lazy var persons: [Person] = {
 
@@ -49,6 +53,8 @@ class PersonsGenerator {
         return array
     }()
     
+    // MARK: - Private Methods
+    
     private func takeItemFrom(array: inout [String]) -> String {
         let index = Int.random(in: 0..<array.count)
         let personName = array[index]
@@ -61,4 +67,5 @@ class PersonsGenerator {
         let server = servers[index]
         return ("\(name)\(surname)@\(server)")
     }
+    
 }

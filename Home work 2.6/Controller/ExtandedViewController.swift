@@ -38,7 +38,6 @@ class ExtandedViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super .viewWillAppear(true)
         tableView.reloadData()
-        print("123")
     }
 
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PersonTableViewCell: UITableViewCell {
+final class PersonTableViewCell: UITableViewCell {
 
     @IBOutlet private var photoImageView: UIImageView!
     @IBOutlet private var emailLabel: UILabel!
@@ -21,4 +21,5 @@ class PersonTableViewCell: UITableViewCell {
         emailLabel.text = "\(person.email)"
         phoneNumberLabel.text = "\(person.phoneNumber)"
     }
+    
 }
